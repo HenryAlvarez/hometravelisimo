@@ -1,0 +1,42 @@
+@import './assets/styles/fonts.scss';
+@import './assets/fonts/icons/style';
+@import './assets/styles/_variables';
+@import './assets/styles/_media';
+@import './assets/styles/antdLocal';
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+p, h2 {
+  margin: 0px;
+}
+
+body {
+  font-family: Poppins-Medium;
+  font-size: 12px;
+  background-color: $bodyColor;
+  height: auto;
+}
+
+
+.containerBox {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 57px);
+
+  .bgCover {
+    background-color: $colorLightGray;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40%;
+    background-image: url('https://anywhere-com.imgix.net/Homepage%20Update%20July%202019/home-bg-beach.jpg');
+    @include media(md-min) {
+      height: 100%;
+    }
+  } 
+}

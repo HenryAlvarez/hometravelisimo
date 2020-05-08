@@ -1,0 +1,132 @@
+.slick-slide,
+.slick-active,
+.slick-current,
+.slick-track,
+.slick-list {
+  border-radius: 5px;
+}
+
+//ant desing modification
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 350px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.ant-rate {
+  color: $colorPrimary;
+  font-size: 18px;
+  line-height: 15px;
+}
+
+.ant-tabs-tab {
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+}
+
+.ant-calendar {
+  margin-top: 40px !important;
+}
+
+.ant-calendar-input-wrap {
+  display: none;
+}
+
+//ant-design carousel dots
+.ant-carousel .slick-dots li button {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+.ant-carousel .slick-slide {
+  background-color: $colorLightGray;
+}
+
+//modal
+.ant-modal-mask {
+  background-color: #fafafacb !important;
+}
+
+.ant-modal-title {
+  text-align: center;
+  color: $colorPrimary;
+  font-size: 16px;
+  display: block;
+  margin-right: 10px;
+  .product {
+    color: $colorDarkGray;
+    font-size: 14px;
+  }
+}
+
+.ant-modal-content {
+  border-radius: 5px;
+  // border: 1px solid #e8e8e8;
+  box-shadow: $shadowSecundary;
+  background-color: $colorWhite;
+}
+
+/*----- ----- ----- style badge to Shopping Cart ----- ----- -----*/
+.ant-badge-count {
+  width: auto;
+  min-width: 16px;
+  height: 16px;
+  line-height: 16px;
+  background-color: $colorControl;
+  color: $colorWhite;
+  top: -6px;
+  padding: 0 4px !important;
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 25px;
+}
+
+.ant-badge-multiple-words {
+  padding: 0px;
+}
+
+//ficha
+/*----- ------ ant design ---- -----*/
+.ant-tabs,
+.ant-tabs-tab {
+    &:hover {
+        color: $colorDarkGray !important;
+    }
+}
+
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
+    color: $colorDarkGray;
+}
+
+//----- ----- ----- Btn-Return in Profile ----- ----- ------/
+.ant-page-header-heading {
+  display: flex;
+  align-items: center;
+
+  .ant-page-header-back {
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+    .ant-page-header-back-button {
+      color: $colorDarkGray;
+
+      &:hover {
+        color: $hoverBtnGeneral;
+      }
+    }
+  }
+}
+
+.ant-form-explain {
+  font-size: 12px;
+}

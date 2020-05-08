@@ -1,0 +1,59 @@
+//fonts
+
+@font-face { 
+  font-family: Poppins-Medium; 
+  font-style: normal; 
+  font-weight: 500; 
+  src: local('Poppins Medium'),
+  // url('../../fonts/Poppins/poppins-v9-latin-500.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/Poppins/poppins-v9-latin-500.woff2') format('woff2'), 
+  url('../fonts/Poppins/poppins-v9-latin-500.woff') format('woff'), 
+  url('../fonts/Poppins/poppins-v9-latin-500.ttf') format('truetype'),
+  url('../fonts/Poppins/poppins-v9-latin-500.eot') format('embedded-opentype'),
+  url('../fonts/Poppins/poppins-v9-latin-500.svg#Poppins') format('svg'); 
+  font-display: swap;
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+@font-face { 
+  font-family: Poppins-SemiBold;
+  font-style: normal;
+  font-weight: 600; 
+  src: local('Poppins-SemiBold'), 
+    // url('../../fonts/Poppins/poppins-v9-latin-600.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/Poppins/poppins-v9-latin-600.woff2') format('woff2'), 
+    url('../fonts/Poppins/poppins-v9-latin-600.woff') format('woff'),
+    url('../fonts/Poppins/poppins-v9-latin-600.eot') format('embedded-opentype'),
+    url('../fonts/Poppins/poppins-v9-latin-600.ttf') format('truetype'),
+    url('../fonts/Poppins/poppins-v9-latin-600.svg#Poppins') format('svg');
+  font-display: swap; 
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+@font-face { 
+  font-family: Rubik-Regular; 
+  font-style: normal; 
+  font-weight: 400; src: 
+    url('../fonts/Rubik/rubik-v9-latin-regular.eot'); 
+    src: local('Rubik'), local('Rubik-Regular'), 
+    url('../fonts/Rubik/rubik-v9-latin-regular.woff2') format('woff2'), 
+    url('../fonts/Rubik/rubik-v9-latin-regular.woff') format('woff'), 
+    url('../fonts/Rubik/rubik-v9-latin-regular.ttf') format('truetype'), 
+    url('../fonts/Rubik/rubik-v9-latin-regular.svg#Rubik') format('svg'); 
+  font-display: swap; 
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+    
+@font-face { font-family: Rubik-Medium; 
+  font-style: normal; 
+  font-weight: 500; src: 
+    url('../fonts/Rubik/rubik-v9-latin-500.eot'); 
+    src: local('Rubik Medium'), local('Rubik-Medium'), 
+    url('../fonts/Rubik/rubik-v9-latin-500.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/Rubik/rubik-v9-latin-500.woff2') format('woff2'), 
+    url('../fonts/Rubik/rubik-v9-latin-500.woff') format('woff'), 
+    url('../fonts/Rubik/rubik-v9-latin-500.ttf') format('truetype'), 
+    url('../fonts/Rubik/rubik-v9-latin-500.svg#Rubik') format('svg');
+  font-display: swap; 
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}

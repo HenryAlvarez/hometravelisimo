@@ -1,0 +1,58 @@
+@import '../../index.scss';
+
+.header {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 30px #f3f1f1be;
+    background-color: white;
+    border-bottom: solid 1px #e8e8e8;
+
+    .logo{
+        img {
+            width: 150px;
+            height: 36px;
+        }
+    }
+
+    .menu {
+
+        .item {
+            width: 32px;
+            height: 32px;
+            border: 1px solid $borderButtonColor;
+            background-color: $colorWhite;
+            border-radius: 5px;
+            margin-right: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &:hover {
+                border: 1px solid $hoverBtnGeneral;
+            }
+
+            .iconItem {
+                font-size: 20px;
+                color: $colorPrimary;
+            }
+        }
+
+        .itemBtn {
+            width: 100px;
+            @extend .item;
+            display: none;
+            @include media(md-min) {
+                display: flex;
+              }
+            p {
+                color: $colorPrimary;
+            }
+        }
+
+        .icon {
+            font-size: 26px;
+            color: $colorPrimary;
+        }
+    }
+}
