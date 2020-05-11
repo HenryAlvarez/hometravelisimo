@@ -2,33 +2,75 @@
 
 .box {
     background-color: white;
-    min-width: 300px;
-    width: 320px;
-    height: 300px;
+    // min-width: 300px;
+    // width: 320px;
+    // height: 300px;
+    margin-top: -50px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: $shadowGeneral;
-    position: absolute;
-    z-index: 2;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -30%);
+    // position: absolute;
+    // z-index: 2;
+    // top: 30%;
+    // left: 50%;
+    // transform: translate(-50%, -30%);
     user-select: none;
 
-    @include media(md-min) {
-      width: 340px;
-      top: 50%;
-      left: 90%;
-      transform: translate(-90%, -50%);
+    .item {
+      padding: 20px;
     }
 
-    h2 {
+    .slogan {
       color: $colorPrimary;
-      font-size: 18px;
+      font-size: 20px;
       text-align: center;
-      margin-top: 10px;
+      user-select: none;
+
       @include media(md-min) {
-        font-size: 18px;
+        font-size: 22px;
       }
+    }
+
+    .ant-select {
+      width: 90%;
+    }
+
+
+    .ant-select-selector {
+      border-radius: 20px !important;
+    }
+
+    .ant-dropdown-link {
+      user-select: none;
+      color: $colorSecondary;
+      text-align: center;
+      // border-bottom: 1px solid $colorPrimary;
+      width: 100%;
+      padding: 10px;
+      margin: auto;
+      background-color: #fafafa;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background-color: #e8e8e8;
+      }
+    }
+
+    .selectMaterial {
+      width: 100%;
+      .inputMaterial {
+        color: $colorSecondary;
+        font-size: 12px !important;
+        font-family: Poppins-Medium;
+      }
+    }
+
+    .btn-control {
+      background-color: $colorControl;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      min-width: 100px;
     }
   }
 

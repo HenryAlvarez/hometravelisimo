@@ -2,11 +2,15 @@
 
 .header {
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     box-shadow: 0 0 30px #f3f1f1be;
     background-color: white;
     border-bottom: solid 1px #e8e8e8;
+    @include media(md-min) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
 
     .logo{
         img {

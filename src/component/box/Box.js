@@ -1,80 +1,127 @@
 import React, { Component } from 'react';
 import './box.scss';
 import Fade from 'react-reveal/Fade';
-import { Tabs } from 'antd';
-import { FaSearch } from "react-icons/fa";
+import Selectm from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
 import { MdCardTravel, MdLightbulbOutline } from "react-icons/md";
-const { TabPane } = Tabs;
-// const { Option } = Select;
+import { Select, Button } from 'antd';
+import { Menu, Dropdown } from 'antd';
+import { DownOutlined } from '@ant-design/icons';
+import InputLabel from '@material-ui/core/InputLabel';
+import FormControl from '@material-ui/core/FormControl';
+const { Option } = Select;
+
+
+ const menu = (
+     <Menu onClick={() => { }}>
+         <Menu.Item className='item' key="1">Vacation Rentals</Menu.Item>
+         <Menu.Item className='item' key="2">Hotels & Resorts</Menu.Item>
+         <Menu.Item className='item' key="3">Hostels & Rooms</Menu.Item>
+         <Menu.Item className='item' key="4">Unique Stay</Menu.Item>
+     </Menu>
+ );
+
+ const menu2 = (
+    <Menu onClick={() => { }}>
+        <Menu.Item className='item' key="5">Tours and Excursions</Menu.Item>
+        <Menu.Item className='item' key="6">Book a Guide</Menu.Item>
+        <Menu.Item className='item' key="7">Local Experiences </Menu.Item>
+        <Menu.Item className='item' key="8">Community Tourism</Menu.Item>
+    </Menu>
+);
+
+const menu3 = (
+    <Menu onClick={() => { }}>
+        <Menu.Item className='item' key="9">Car Rental</Menu.Item>
+        <Menu.Item className='item' key="10">Private Transport</Menu.Item>
+        <Menu.Item className='item' key="11">Collective Shuttle</Menu.Item>
+        <Menu.Item className='item' key="12">Flights & Helicopters</Menu.Item>
+    </Menu>
+);
+
+
 
 
 class Box extends Component {
-    state = {}
+    state = { value: 'ES-es' };
 
+    handleChange = (value) => {
+        this.setState({ value: value });
+    };
 
     render() {
         return (
-            <div className='box'>
-                <Fade bottom>
-                    <h2 className='slogan'>All your travel needs in one place</h2>
-                </Fade>
-                <div>
-                    <div className="wrapper">
-                        <div className="search">
-                            <input
-                                id="search"
-                                type="search"
-                                placeholder="Search a country..."
-                                autocomplete="off"
-                            />
-                            <FaSearch className='icon' />
-                        </div>
+            <div className='row d-flex justify-content-md-end'>
+                <div className='col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4'>
+                    <div className='box'>
+                        <Fade bottom>
+                            <h2 className='slogan'>All your travel needs in one place</h2>
+                            <div className='d-flex justify-content-center mt-2'>
+                                <Select
+                                    showSearch
+                                    placeholder="Select a Country"
+                                    optionFilterProp="children"
+                                    filterOption={(input, option) =>
+                                        option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                                    }
+                                >
+                                    <Option value="jack">Guatemala</Option>
+                                    <Option value="lucy">El Salvador</Option>
+                                    <Option value="tom">Honduras</Option>
+                                </Select>
+                            </div>
+                            <Dropdown overlay={menu} trigger={['click']}>
+                                <div className="ant-dropdown-link d-flex justify-content-between align-items-center mt-2">
+                                    <p>Accommodation</p> <DownOutlined />
+                                </div>
+                            </Dropdown>
+                            <Dropdown overlay={menu2} trigger={['click']}>
+                                <div className="ant-dropdown-link d-flex justify-content-between align-items-center mt-2">
+                                    <p>things to Do</p> <DownOutlined />
+                                </div>
+                            </Dropdown>
+                            <Dropdown overlay={menu3} trigger={['click']}>
+                                <div className="ant-dropdown-link d-flex justify-content-between align-items-center mt-2">
+                                    <p>Transportation</p> <DownOutlined />
+                                </div>
+                            </Dropdown>
+                            {/* <FormControl className={'selectMaterial '}>
+                                <InputLabel className='inputMaterial' htmlFor="grouped-select">Accommodation</InputLabel>
+                                <Selectm className='' defaultValue="" id="grouped-select">
+                                    <MenuItem value={1}>Vacation Rentals</MenuItem>
+                                    <MenuItem value={2}>Hotels & Resorts</MenuItem>
+                                    <MenuItem value={3}>Hostels & Rooms</MenuItem>
+                                    <MenuItem value={3}>Unique Stay</MenuItem>
+                                </Selectm>
+                            </FormControl>
+                            <FormControl className={'selectMaterial '}>
+                                <InputLabel className='inputMaterial' htmlFor="grouped-select">Things to Do</InputLabel>
+                                <Selectm className='' defaultValue="" id="grouped-select">
+                                    <MenuItem value={5}>Ten</MenuItem>
+                                    <MenuItem value={6}>Twenty</MenuItem>
+                                    <MenuItem value={30}>Thirty</MenuItem>
+                                </Selectm>
+                            </FormControl>
+                            <FormControl className={'selectMaterial '}>
+                                <InputLabel className='inputMaterial' htmlFor="grouped-select">Transportation</InputLabel>
+                                <Selectm className='' defaultValue="" id="grouped-select">
+                                    <MenuItem className='items' value={10}>Ten</MenuItem>
+                                    <MenuItem className='items' value={20}>Twenty</MenuItem>
+                                    <MenuItem className='items' value={30}>Thirty</MenuItem>
+                                </Selectm>
+                            </FormControl> */}
+                            {/* <div className='mt-2 d-flex justify-content-center'>
+                                <Button className='btn-control'>Go</Button>
+                            </div> */}
+                        </Fade>
                     </div>
                 </div>
-                <Tabs defaultActiveKey="1">
-                    <TabPane tab="Accommodation" key="1">
-                        <div className='row d-flex justify-content-center'>
-                            <Service img='https://cdn.travelisimo.com/vacationrentals/5dc336bc45757d3cfc31476b/casa-cielo-bedroom.webp' name='Vacation Renatls' />
-                            <Service img='https://images.unsplash.com/photo-1535827841776-24afc1e255ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' name='Hotels & Resorts' />
-                            <Service img='https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' name='Hostels & Rooms' />
-                            <Service img='https://images.unsplash.com/photo-1550355191-aa8a80b41353?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' name='Unique Stays' />
-                        </div>
-                    </TabPane>
-                    <TabPane tab="Things to Do" key="3">
-                        <div className='row d-flex justify-content-center'>
-                            <Service img='https://images.unsplash.com/photo-1510662145379-13537db782dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' name='Tour & Excursions' />
-                            <Service img='https://images.unsplash.com/photo-1518231365576-99dafdedcd69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' name='Book a Guide' />
-                            <Service img='https://cdn.travelisimo.com/tours/5de03025e1e6c80071f6d14e/cerro-tzankujil-2.jpg' name='Local Expirences' />
-                            <Service img='https://cdn.travelisimo.com/tours/5dfaa0bb3c81df007300e536/guatemalan-cooking-class-2.jpg' name='Community Tourism' />
-                        </div>
-                    </TabPane>
-                    <TabPane tab="Transportation" key="2">
-                        <div className='row d-flex justify-content-center'>
-                            <Service img='' name='' />
-                            <Service img='' name='' />
-                            <Service img='' name='' />
-                            <Service img='' name='' />
-                        </div>
-                    </TabPane>
-
-                </Tabs>
             </div>
         );
     }
 }
 
 
-const Service = (props) => (
-    <div className='col-5 pl-2 pr-2'>
-        <div className='services'>
-            <div className='img' style={{ backgroundImage: `url(${props.img})` }}>
-                <div className='overlay'>
-                    <p>{props.name}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-)
 
 
 
