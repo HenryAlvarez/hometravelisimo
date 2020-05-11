@@ -77,7 +77,7 @@ class Box extends Component {
                             </Dropdown>
                             <Dropdown overlay={menu2} trigger={['click']}>
                                 <div className="ant-dropdown-link d-flex justify-content-between align-items-center mt-2">
-                                    <p>things to Do</p> <DownOutlined />
+                                    <p>Things to Do</p> <DownOutlined />
                                 </div>
                             </Dropdown>
                             <Dropdown overlay={menu3} trigger={['click']}>
