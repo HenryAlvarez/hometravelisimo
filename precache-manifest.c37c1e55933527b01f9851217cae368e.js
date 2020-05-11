@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95f2bf7d21e79a92676b4c60bd69d69c",
+    "revision": "8819f9ed086992e812e7308c25b08578",
     "url": "/hometravelisimo/index.html"
   },
   {
-    "revision": "b5bf98a93e28f29ae7f8",
+    "revision": "0910863dfcff8e61080a",
     "url": "/hometravelisimo/static/css/2.35fcc229.chunk.css"
   },
   {
-    "revision": "d0a738ec9f4ebf6bcb08",
-    "url": "/hometravelisimo/static/css/main.ec636605.chunk.css"
+    "revision": "490577684ea3c4fb15cd",
+    "url": "/hometravelisimo/static/css/main.323d1027.chunk.css"
   },
   {
-    "revision": "b5bf98a93e28f29ae7f8",
-    "url": "/hometravelisimo/static/js/2.51fdad0f.chunk.js"
+    "revision": "0910863dfcff8e61080a",
+    "url": "/hometravelisimo/static/js/2.f0a17c8f.chunk.js"
   },
   {
-    "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/hometravelisimo/static/js/2.51fdad0f.chunk.js.LICENSE.txt"
+    "revision": "3453b8997016469371284a28c0e873e2",
+    "url": "/hometravelisimo/static/js/2.f0a17c8f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d0a738ec9f4ebf6bcb08",
-    "url": "/hometravelisimo/static/js/main.6d0dbdad.chunk.js"
+    "revision": "490577684ea3c4fb15cd",
+    "url": "/hometravelisimo/static/js/main.20709a9c.chunk.js"
   },
   {
     "revision": "6294ad013def34852de0",

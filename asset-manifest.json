@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/hometravelisimo/static/css/main.ec636605.chunk.css",
-    "main.js": "/hometravelisimo/static/js/main.6d0dbdad.chunk.js",
-    "main.js.map": "/hometravelisimo/static/js/main.6d0dbdad.chunk.js.map",
+    "main.css": "/hometravelisimo/static/css/main.323d1027.chunk.css",
+    "main.js": "/hometravelisimo/static/js/main.20709a9c.chunk.js",
+    "main.js.map": "/hometravelisimo/static/js/main.20709a9c.chunk.js.map",
     "runtime-main.js": "/hometravelisimo/static/js/runtime-main.14d777fd.js",
     "runtime-main.js.map": "/hometravelisimo/static/js/runtime-main.14d777fd.js.map",
     "static/css/2.35fcc229.chunk.css": "/hometravelisimo/static/css/2.35fcc229.chunk.css",
-    "static/js/2.51fdad0f.chunk.js": "/hometravelisimo/static/js/2.51fdad0f.chunk.js",
-    "static/js/2.51fdad0f.chunk.js.map": "/hometravelisimo/static/js/2.51fdad0f.chunk.js.map",
+    "static/js/2.f0a17c8f.chunk.js": "/hometravelisimo/static/js/2.f0a17c8f.chunk.js",
+    "static/js/2.f0a17c8f.chunk.js.map": "/hometravelisimo/static/js/2.f0a17c8f.chunk.js.map",
     "index.html": "/hometravelisimo/index.html",
-    "precache-manifest.2041b5da75efab954900aca9229b0665.js": "/hometravelisimo/precache-manifest.2041b5da75efab954900aca9229b0665.js",
+    "precache-manifest.c37c1e55933527b01f9851217cae368e.js": "/hometravelisimo/precache-manifest.c37c1e55933527b01f9851217cae368e.js",
     "service-worker.js": "/hometravelisimo/service-worker.js",
     "static/css/2.35fcc229.chunk.css.map": "/hometravelisimo/static/css/2.35fcc229.chunk.css.map",
-    "static/css/main.ec636605.chunk.css.map": "/hometravelisimo/static/css/main.ec636605.chunk.css.map",
-    "static/js/2.51fdad0f.chunk.js.LICENSE.txt": "/hometravelisimo/static/js/2.51fdad0f.chunk.js.LICENSE.txt",
+    "static/css/main.323d1027.chunk.css.map": "/hometravelisimo/static/css/main.323d1027.chunk.css.map",
+    "static/js/2.f0a17c8f.chunk.js.LICENSE.txt": "/hometravelisimo/static/js/2.f0a17c8f.chunk.js.LICENSE.txt",
     "static/media/box.scss": "/hometravelisimo/static/media/rubik-v9-latin-regular.abb19d44.eot",
     "static/media/logotipo.png": "/hometravelisimo/static/media/logotipo.306646fe.png"
   },
   "entrypoints": [
     "static/js/runtime-main.14d777fd.js",
     "static/css/2.35fcc229.chunk.css",
-    "static/js/2.51fdad0f.chunk.js",
-    "static/css/main.ec636605.chunk.css",
-    "static/js/main.6d0dbdad.chunk.js"
+    "static/js/2.f0a17c8f.chunk.js",
+    "static/css/main.323d1027.chunk.css",
+    "static/js/main.20709a9c.chunk.js"
   ]
 }
