@@ -23,21 +23,28 @@ body {
 
 
 .containerBox {
-  width: 100%;
-  height: calc(100vh - 47px);
-  display: flex;
-  align-items: center;
-  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-image: url('https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1490&q=80');
-  @include media(md-min) {
-    height: calc(100vh - 57px);
-  }
+  background-image: url('./assets/img/bgHome.jpg');
 
-  .bgCover {
-    background-color: $colorLightGray;
-  } 
+  .water {
+    position: absolute;
+    background-image: url("./assets/img/bgHome.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    filter: url('#turbulence');
+  }
 
 
 }

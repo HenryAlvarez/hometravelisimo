@@ -2,18 +2,10 @@
 
 .box {
     background-color: white;
-    // min-width: 300px;
-    // width: 320px;
-    // height: 300px;
-    margin-top: -50px;
+    margin-top: 40%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: $shadowGeneral;
-    // position: absolute;
-    // z-index: 2;
-    // top: 30%;
-    // left: 50%;
-    // transform: translate(-50%, -30%);
     user-select: none;
 
     .item {
@@ -21,13 +13,15 @@
     }
 
     .slogan {
-      color: $colorPrimary;
+      color: $colorSecondary;
       font-size: 20px;
       text-align: center;
       user-select: none;
 
       @include media(md-min) {
         font-size: 22px;
+        margin-left: 20px;
+        margin-right: 20px;
       }
     }
 
@@ -42,7 +36,8 @@
 
     .ant-dropdown-link {
       user-select: none;
-      color: $colorSecondary;
+      color: $colorPrimary;
+      font-size: 14px;
       text-align: center;
       // border-bottom: 1px solid $colorPrimary;
       width: 100%;
@@ -75,41 +70,41 @@
   }
 
 
-.services {
-  box-shadow: $shadowGeneral;
-  // border: 1px solid #eee;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  background-color: #fafafa;
+// .services {
+//   box-shadow: $shadowGeneral;
+//   // border: 1px solid #eee;
+//   border-radius: 5px;
+//   margin-bottom: 10px;
+//   cursor: pointer;
+//   background-color: #fafafa;
 
-  .img {
-    @extend .bgCover;
-    width: 100%;
-    height: 60px !important;
-    border-radius: 5px;
-    position: relative;
-    // border-top-left-radius: 5px;
-    // border-top-right-radius: 5px;
+//   .img {
+//     @extend .bgCover;
+//     width: 100%;
+//     height: 60px !important;
+//     border-radius: 5px;
+//     position: relative;
+//     // border-top-left-radius: 5px;
+//     // border-top-right-radius: 5px;
 
-    .overlay {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.342);
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+//     .overlay {
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         background-color: rgba(0, 0, 0, 0.342);
+//         border-radius: 5px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
 
-        p {
-            text-align: center;
-            font-size: 13px;
-            color: white;
-          }
-    }
-  }
-}
+//         p {
+//             text-align: center;
+//             font-size: 13px;
+//             color: white;
+//           }
+//     }
+//   }
+// }
 
 
 

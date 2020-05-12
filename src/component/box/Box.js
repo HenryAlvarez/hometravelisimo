@@ -39,6 +39,15 @@ const menu3 = (
     </Menu>
 );
 
+const menu4 = (
+    <Menu onClick={() => { }}>
+        <Menu.Item className='item' key="9">Information</Menu.Item>
+        <Menu.Item className='item' key="10">Event Calendar</Menu.Item>
+        <Menu.Item className='item' key="11">Directories</Menu.Item>
+        <Menu.Item className='item' key="12">Blog</Menu.Item>
+    </Menu>
+);
+
 
 
 
@@ -51,7 +60,7 @@ class Box extends Component {
 
     render() {
         return (
-            <div className='row d-flex justify-content-md-end'>
+            <div className='row d-flex justify-content-center justify-content-md-end'>
                 <div className='col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4'>
                     <div className='box'>
                         <Fade bottom>
@@ -83,6 +92,11 @@ class Box extends Component {
                             <Dropdown overlay={menu3} trigger={['click']}>
                                 <div className="ant-dropdown-link d-flex justify-content-between align-items-center mt-2">
                                     <p>Transportation</p> <DownOutlined />
+                                </div>
+                            </Dropdown>
+                            <Dropdown overlay={menu4} trigger={['click']}>
+                                <div className="ant-dropdown-link d-flex justify-content-between align-items-center mt-2">
+                                    <p>Tourist Information</p> <DownOutlined />
                                 </div>
                             </Dropdown>
                             {/* <FormControl className={'selectMaterial '}>
