@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
 import './box.scss';
 import Fade from 'react-reveal/Fade';
-import Selectm from '@material-ui/core/Select';
-import MenuItem from '@material-ui/core/MenuItem';
-import { MdCardTravel, MdLightbulbOutline } from "react-icons/md";
-import { Select, Button } from 'antd';
+import { Select } from 'antd';
 import { Menu, Dropdown } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
 const { Option } = Select;
 
 
@@ -99,34 +94,6 @@ class Box extends Component {
                                     <p>Tourist Information</p> <DownOutlined />
                                 </div>
                             </Dropdown>
-                            {/* <FormControl className={'selectMaterial '}>
-                                <InputLabel className='inputMaterial' htmlFor="grouped-select">Accommodation</InputLabel>
-                                <Selectm className='' defaultValue="" id="grouped-select">
-                                    <MenuItem value={1}>Vacation Rentals</MenuItem>
-                                    <MenuItem value={2}>Hotels & Resorts</MenuItem>
-                                    <MenuItem value={3}>Hostels & Rooms</MenuItem>
-                                    <MenuItem value={3}>Unique Stay</MenuItem>
-                                </Selectm>
-                            </FormControl>
-                            <FormControl className={'selectMaterial '}>
-                                <InputLabel className='inputMaterial' htmlFor="grouped-select">Things to Do</InputLabel>
-                                <Selectm className='' defaultValue="" id="grouped-select">
-                                    <MenuItem value={5}>Ten</MenuItem>
-                                    <MenuItem value={6}>Twenty</MenuItem>
-                                    <MenuItem value={30}>Thirty</MenuItem>
-                                </Selectm>
-                            </FormControl>
-                            <FormControl className={'selectMaterial '}>
-                                <InputLabel className='inputMaterial' htmlFor="grouped-select">Transportation</InputLabel>
-                                <Selectm className='' defaultValue="" id="grouped-select">
-                                    <MenuItem className='items' value={10}>Ten</MenuItem>
-                                    <MenuItem className='items' value={20}>Twenty</MenuItem>
-                                    <MenuItem className='items' value={30}>Thirty</MenuItem>
-                                </Selectm>
-                            </FormControl> */}
-                            {/* <div className='mt-2 d-flex justify-content-center'>
-                                <Button className='btn-control'>Go</Button>
-                            </div> */}
                         </Fade>
                     </div>
                 </div>
@@ -134,24 +101,5 @@ class Box extends Component {
         );
     }
 }
-
-
-
-
-
-export const MinCard = () => (
-    <div className='minCard'>
-        <div className='d-flex justify-content-around'>
-            <div className='card'>
-                <MdCardTravel className='icon' />
-                <p>Plan Your Trip</p>
-            </div>
-            <div className='card'>
-                <MdLightbulbOutline className='icon' />
-                <p>Tourist Info</p>
-            </div>
-        </div>
-    </div>
-)
 
 export default Box;
