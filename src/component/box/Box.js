@@ -7,16 +7,16 @@ import { DownOutlined } from '@ant-design/icons';
 const { Option } = Select;
 
 
- const menu = (
-     <Menu onClick={() => { }}>
-         <Menu.Item className='item' key="1">Vacation Rentals</Menu.Item>
-         <Menu.Item className='item' key="2">Hotels & Resorts</Menu.Item>
-         <Menu.Item className='item' key="3">Hostels & Rooms</Menu.Item>
-         <Menu.Item className='item' key="4">Unique Stay</Menu.Item>
-     </Menu>
- );
+const menu = (
+    <Menu onClick={() => { }}>
+        <Menu.Item className='item' key="1">Vacation Rentals</Menu.Item>
+        <Menu.Item className='item' key="2">Hotels & Resorts</Menu.Item>
+        <Menu.Item className='item' key="3">Hostels & Rooms</Menu.Item>
+        <Menu.Item className='item' key="4">Unique Stay</Menu.Item>
+    </Menu>
+);
 
- const menu2 = (
+const menu2 = (
     <Menu onClick={() => { }}>
         <Menu.Item className='item' key="5">Tours and Excursions</Menu.Item>
         <Menu.Item className='item' key="6">Book a Guide</Menu.Item>
@@ -47,11 +47,10 @@ const menu4 = (
 
 
 class Box extends Component {
-    state = { value: 'ES-es' };
 
-    handleChange = (value) => {
-        this.setState({ value: value });
-    };
+    onChange = (value) => {
+        this.props.getCountry(value);
+    }
 
     render() {
         return (
@@ -65,13 +64,14 @@ class Box extends Component {
                                     showSearch
                                     placeholder="Select a Country"
                                     optionFilterProp="children"
+                                    onChange={this.onChange}
                                     filterOption={(input, option) =>
                                         option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
                                     }
                                 >
-                                    <Option value="jack">Guatemala</Option>
-                                    <Option value="lucy">El Salvador</Option>
-                                    <Option value="tom">Honduras</Option>
+                                    <Option value="Guatemala">Guatemala</Option>
+                                    <Option value="ElSalvador">El Salvador</Option>
+                                    <Option value="Belice">Belice</Option>
                                 </Select>
                             </div>
                             <Dropdown overlay={menu} trigger={['click']}>
