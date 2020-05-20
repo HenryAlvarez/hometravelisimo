@@ -32,6 +32,27 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   animation: fadeInFromNone 2s ease-out;
+
+  .contentText {
+   position: absolute;
+   display: none;
+   left: 5%;
+   bottom: 15%;
+   @include media(md-min) {
+      display: block;
+    }
+    
+    h1 {
+      color: white;
+      @include media(md-min) {
+        font-size: 2rem;
+      }
+      @include media(lg-min) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
   .water {
     position: absolute;
     background-image: url("./assets/img/bgHome.png");
