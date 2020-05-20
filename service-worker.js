@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hometravelisimo/precache-manifest.118255adda099b08ef1b28b20ebe4411.js"
+  "/hometravelisimo/precache-manifest.451535b81df0f3b34c2b2bf7ac6f843a.js"
 );
 
 self.addEventListener('message', (event) => {
