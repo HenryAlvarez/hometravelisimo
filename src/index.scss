@@ -27,7 +27,7 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100vw;
+  width: 62vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,19 +40,19 @@ body {
     position: absolute;
     display: none;
     left: 5%;
-    top: 35%;
+    top: 50%;
     @include media(md-min) {
       display: block;
     }
     h1 {
       color: white;
       text-align: center;
-      line-height: 2rem;
+      line-height: 1.5rem;
       @include media(md-min) {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
       @include media(lg-min) {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
     }
   }
@@ -69,10 +69,10 @@ body {
     h1 {
       color: black;
       @include media(md-min) {
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
       @include media(lg-min) {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
     }
   }

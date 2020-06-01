@@ -54,7 +54,9 @@ class App extends Component {
 const Guatemala = (props) => (
   <React.Fragment>
     <div className='containerBox'
-      style={{ backgroundImage: `url(https://images.unsplash.com/photo-1528543010705-e7e75169b717?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80)` }}>
+      // style={{ backgroundImage: `url(https://images.unsplash.com/photo-1528543010705-e7e75169b717?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80)`
+      style={{ backgroundImage: `url(https://i.ibb.co/DLskJmH/bgHome.jpg)`   
+    }}>
       <div className='slogan'>
         <h1 className=''>All your travel needs</h1>
         <h1 className=''>in one place</h1>
