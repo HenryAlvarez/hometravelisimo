@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "edfef1641185b5fb4f1b997ee2b720de",
+    "revision": "b03c87ba8d6e0187e4f03a562a50305a",
     "url": "/hometravelisimo/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hometravelisimo/static/css/2.35fcc229.chunk.css"
   },
   {
-    "revision": "343cf5be98f4f3d19956",
-    "url": "/hometravelisimo/static/css/main.fcb1ab22.chunk.css"
+    "revision": "0106bf611363091970aa",
+    "url": "/hometravelisimo/static/css/main.8555bbf0.chunk.css"
   },
   {
     "revision": "28f5249a5f6ea2d5de14",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hometravelisimo/static/js/2.2eb35c53.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "343cf5be98f4f3d19956",
-    "url": "/hometravelisimo/static/js/main.84d5ffc2.chunk.js"
+    "revision": "0106bf611363091970aa",
+    "url": "/hometravelisimo/static/js/main.69fb04f6.chunk.js"
   },
   {
     "revision": "6294ad013def34852de0",
