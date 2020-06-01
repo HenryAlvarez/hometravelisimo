@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "081fa55e44801e07367a84a7c20ee551",
+    "revision": "edfef1641185b5fb4f1b997ee2b720de",
     "url": "/hometravelisimo/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hometravelisimo/static/css/2.35fcc229.chunk.css"
   },
   {
-    "revision": "c7de60967a1c1ed85135",
-    "url": "/hometravelisimo/static/css/main.dab20e15.chunk.css"
+    "revision": "343cf5be98f4f3d19956",
+    "url": "/hometravelisimo/static/css/main.fcb1ab22.chunk.css"
   },
   {
     "revision": "28f5249a5f6ea2d5de14",
@@ -20,16 +20,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hometravelisimo/static/js/2.2eb35c53.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c7de60967a1c1ed85135",
-    "url": "/hometravelisimo/static/js/main.80d8bcaa.chunk.js"
+    "revision": "343cf5be98f4f3d19956",
+    "url": "/hometravelisimo/static/js/main.84d5ffc2.chunk.js"
   },
   {
     "revision": "6294ad013def34852de0",
     "url": "/hometravelisimo/static/js/runtime-main.14d777fd.js"
-  },
-  {
-    "revision": "ff887997a681a815ca1eb63423438608",
-    "url": "/hometravelisimo/static/media/bgHome.ff887997.png"
   },
   {
     "revision": "4cafa1ae80d27833de57434e43cbbe40",
