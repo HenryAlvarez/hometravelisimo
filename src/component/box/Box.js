@@ -58,10 +58,10 @@ class Box extends Component {
                 <div className='col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4'>
                     <div className='box'>
                         <Fade bottom>
-                            <h2 className='slogan'>All your travel needs in one place</h2>
+                            <h2 className='slogan d-md-none'>All your travel needs in one place</h2>
                             <div className='d-flex justify-content-center mt-2'>
                                 <Select
-                                    showSearch
+                                    defaultValue='Guatemala'
                                     placeholder="Select a Country"
                                     optionFilterProp="children"
                                     onChange={this.onChange}
@@ -70,8 +70,9 @@ class Box extends Component {
                                     }
                                 >
                                     <Option value="Guatemala">Guatemala</Option>
-                                    <Option value="ElSalvador">El Salvador</Option>
-                                    <Option value="Belice">Belice</Option>
+                                    <Option value="ElSalvador" disabled>El Salvador</Option>
+                                    <Option value="Honduras" disabled>Honduras</Option>
+                                    <Option value="Belice" disabled>Belice</Option>
                                 </Select>
                             </div>
                             <Dropdown overlay={menu} trigger={['click']}>

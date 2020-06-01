@@ -32,18 +32,22 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   animation: fadeInFromNone 2s ease-out;
+  background-color: white;
 
-  .contentText {
-   position: absolute;
-   display: none;
-   left: 5%;
-   bottom: 15%;
-   @include media(md-min) {
+
+  .slogan {
+    position: absolute;
+    position: absolute;
+    display: none;
+    left: 5%;
+    top: 35%;
+    @include media(md-min) {
       display: block;
     }
-    
     h1 {
       color: white;
+      text-align: center;
+      line-height: 2rem;
       @include media(md-min) {
         font-size: 2rem;
       }
@@ -53,18 +57,38 @@ body {
     }
   }
 
-  .water {
-    position: absolute;
-    background-image: url("./assets/img/bgHome.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    top:0;
-    left:0;
-    height: 100%;
-    width: 100%;
-    filter: url('#turbulence');
+  .contentText {
+   position: absolute;
+   display: none;
+   left: 5%;
+   bottom: 10%;
+   @include media(md-min) {
+      display: block;
+    }
+    
+    h1 {
+      color: black;
+      @include media(md-min) {
+        font-size: 1.5rem;
+      }
+      @include media(lg-min) {
+        font-size: 1.8rem;
+      }
+    }
   }
+
+  // .water {
+  //   position: absolute;
+  //   background-image: url("./assets/img/bgHome.png");
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   top:0;
+  //   left:0;
+  //   height: 100%;
+  //   width: 100%;
+  //   filter: url('#turbulence');
+  // }
 }
 
 @keyframes fadeInFromNone {

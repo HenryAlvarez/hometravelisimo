@@ -2,7 +2,7 @@
 
 .box {
     background-color: white;
-    margin-top: 40%;
+    margin-top: 50%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: $shadowGeneral;
@@ -17,11 +17,11 @@
       font-size: 20px;
       text-align: center;
       user-select: none;
+      margin-left: 20px;
+      margin-right: 20px;
 
       @include media(md-min) {
         font-size: 22px;
-        margin-left: 20px;
-        margin-right: 20px;
       }
     }
 
